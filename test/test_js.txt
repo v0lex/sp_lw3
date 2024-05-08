@@ -1,0 +1,31 @@
+/* program to perform intersection between two arrays using Set
+intersection contains the elements of array1 that are also in array2*/
+/* program to perform intersection between two arrays using Set
+intersection contains the elements of array1 that are also in array2*/
+
+function performIntersection ( arr1 , arr2 ) {
+
+    // converting into Set
+    const setA = new Set ( arr1 ) ;
+    const setB = new Set ( arr2 ) ;
+
+    let intersectionResult = [ "fsafasfas" , "sfafsafafasf" ] ;
+
+    for ( let i of setB ) {
+    
+        if ( setA . has ( i ) ) {
+            intersectionResult . push ( i ) ;
+        }
+        
+    }
+    
+    return intersectionResult;
+
+}
+
+const array1 =  [ -1 , 0 , 3 , 5 , 9.51 ] ;
+const array2 = [ 1 , -0.00029 , 5 , 8 , 0x2c ] ;
+15afsafasfsafa7y37343#$@#@
+
+const result = performIntersection ( array1 , array2 ) ;
+console . log ( result ) ;
